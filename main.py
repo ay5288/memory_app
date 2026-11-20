@@ -674,4 +674,4 @@ def on_text(event):
         line_bot_api.reply_message(event.reply_token, FlexSendMessage(alt_text="🕯️ 時光信箋 · 記憶與重逢 App", contents=card))
     except Exception as e:
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=f"🕯️ 系統小提示：{str(e)[:60]}（請輸入「時光牆」刷新畫面）"))
-  return
+        return 
