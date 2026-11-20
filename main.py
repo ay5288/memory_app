@@ -18,7 +18,7 @@ GOOGLE_SHEET_API = "https://script.google.com/macros/s/AKfycbz3dZ_h1X5pQxcDHhTBr
 # ⚠️ 2. 請填入這個尋人與記憶機器人的 LINE 官方帳號 ID（包含 @ 符號，例如 @123abcde）
 LINE_BOT_BASIC_ID = "@356yvdwm"
 # ⚠️ 3. 請填入這個機器人的 Render 公開網址（結尾不要加斜線）
-RENDER_BASE_URL = "https://onrender.com"
+RENDER_BASE_URL = "https://memory-app-445z.onrender.com"
 # ⚠️ 4. 可填入您的 Notion 懷舊零食／復古遊戲機／底片相機推薦館網址（未填自動隱藏）
 NOTION_RETRO_SHOP_URL = ""
 
