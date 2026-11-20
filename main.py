@@ -335,11 +335,12 @@ def childhood_memory_glass_app(msg: str = ""):
       function closeModals() {{ document.getElementById('edit-modal').style.display = 'none'; document.getElementById('del-modal').style.display = 'none'; }}
       function openArchive(mode) {{
         const q = document.getElementById('arc-q').value.trim() || '台灣老街 懷舊';
-        if (mode === 'yt') window.open(`https:{S}{S}://youtube.com{S}results?search_query=${{encodeURIComponent(q + ' 懷舊 老影片')}}`, '_blank');
-        if (mode === 'img') window.open(`https:{S}{S}://google.com{S}search?tbm=isch&q=${{encodeURIComponent(q + ' 老照片 舊照')}}`, '_blank');
-        if (mode === 'threads') window.open(`https:{S}{S}www.threads.net{S}search?q=${{encodeURIComponent(q)}}`, '_blank');
-        if (mode === 'map') window.open(`https:{S}{S}://google.com{S}?q=${{encodeURIComponent(q)}}`, '_blank');
+        if (mode === 'yt') window.location.href = `https:{S}{S}://youtube.com{S}results?search_query=${{encodeURIComponent(q + ' 懷舊 老影片')}}`;
+        if (mode === 'img') window.location.href = `https:{S}{S}://google.com{S}search?tbm=isch&q=${{encodeURIComponent(q + ' 老照片 舊照')}}`;
+        if (mode === 'threads') window.location.href = `https:{S}{S}www.threads.net{S}search?q=${{encodeURIComponent(q)}}`;
+        if (mode === 'map') window.location.href = `https:{S}{S}://google.com{S}?q=${{encodeURIComponent(q)}}`;
       }}
+
       function switchPage(p, el) {{ document.querySelectorAll('.page').forEach(x => x.classList.remove('active')); document.querySelectorAll('.tab').forEach(x => x.classList.remove('active')); document.getElementById('page-' + p).classList.add('active'); el.classList.add('active'); window.scrollTo({{top:0, behavior:'smooth'}}); }}
       function openLb(src) {{ document.getElementById('lb-img').src = src; document.getElementById('lightbox').style.display = 'flex'; }}
       applyFilter();
